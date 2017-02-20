@@ -4,6 +4,7 @@
     [PhoneType]        NVARCHAR (20)    NOT NULL,
     [PhoneNumber]      NVARCHAR (20)    NOT NULL,
     [PhoneExtension]   NVARCHAR (10)    NULL,
+	[Primary]          NVARCHAR(1)      NOT NULL,
     [StartDate]        DATE             NOT NULL,
     [EndDate]          DATE             NULL,
     [Status]           NVARCHAR (20)    NOT NULL,

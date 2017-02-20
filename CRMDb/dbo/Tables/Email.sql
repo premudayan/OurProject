@@ -3,6 +3,7 @@
     [CustomerID]       INT              NULL,
     [EmailType]        NVARCHAR (20)    NOT NULL,
     [EmailAddress]     NVARCHAR (100)   NOT NULL,
+	[Primary]          NVARCHAR(1)      NOT NULL,
     [StartDate]        DATE             NOT NULL,
     [EndDate]          DATE             NULL,
     [Status]           NVARCHAR (20)    NOT NULL,
