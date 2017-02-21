@@ -61,28 +61,38 @@
     <Folder Include="Properties" />
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Tables\Security" />
+    <Folder Include="dbo\Tables\Setup" />
+    <Folder Include="dbo\Tables\Other" />
+    <Folder Include="dbo\Tables\CRM" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\CRMConfiguration.sql" />
-    <Build Include="dbo\Tables\Customer.sql" />
-    <Build Include="dbo\Tables\CustomerRelationship.sql" />
-    <Build Include="dbo\Tables\Document.sql" />
-    <Build Include="dbo\Tables\Email.sql" />
-    <Build Include="dbo\Tables\LookupType.sql" />
-    <Build Include="dbo\Tables\LookupValue.sql" />
-    <Build Include="dbo\Tables\Phone.sql" />
-    <Build Include="dbo\Tables\Prospect.sql" />
-    <Build Include="dbo\Tables\CommitteeRole.sql" />
-    <Build Include="dbo\Tables\Committee.sql" />
-    <Build Include="dbo\Tables\Address.sql" />
-    <Build Include="dbo\Tables\CommitteeMember.sql" />
-    <Build Include="dbo\Tables\Company.sql" />
-    <Build Include="dbo\Tables\CompanyRole.sql" />
+    <Build Include="dbo\Tables\Security\CRMRolePrivilege.sql" />
+    <Build Include="dbo\Tables\Security\CRMScreen.sql" />
+    <Build Include="dbo\Tables\Security\CRMUser.sql" />
+    <Build Include="dbo\Tables\Security\CRMUserRole.sql" />
+    <Build Include="dbo\Tables\Setup\CRMConfiguration.sql" />
+    <Build Include="dbo\Tables\Setup\LookupType.sql" />
+    <Build Include="dbo\Tables\Setup\LookupValue.sql" />
+    <None Include="dbo\Tables\Other\Script1.sql" />
+    <Build Include="dbo\Tables\CRM\Address.sql" />
+    <Build Include="dbo\Tables\CRM\Committee.sql" />
+    <Build Include="dbo\Tables\CRM\CommitteeMember.sql" />
+    <Build Include="dbo\Tables\CRM\CommitteeRole.sql" />
+    <Build Include="dbo\Tables\CRM\Company.sql" />
+    <Build Include="dbo\Tables\CRM\CompanyRole.sql" />
+    <Build Include="dbo\Tables\CRM\Customer.sql" />
+    <Build Include="dbo\Tables\CRM\CustomerPortal.sql" />
+    <Build Include="dbo\Tables\Security\CRMRole.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="CRMDb.refactorlog" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="dbo\Script1.sql" />
+    <Build Include="dbo\Tables\CRM\CustomerRelationship.sql" />
+    <Build Include="dbo\Tables\CRM\Document.sql" />
+    <Build Include="dbo\Tables\CRM\Email.sql" />
+    <Build Include="dbo\Tables\CRM\Phone.sql" />
+    <Build Include="dbo\Tables\CRM\Prospect.sql" />
   </ItemGroup>
 </Project>

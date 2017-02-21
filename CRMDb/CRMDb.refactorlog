@@ -21,4 +21,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="WorkPhoneNumber" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="01aba3e2-11de-42ae-9de9-1ec8d4880909" ChangeDateTime="02/21/2017 00:51:22">
+    <Property Name="ElementName" Value="[dbo].[Customer].[PrefixName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Customer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Salutation" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="102eda40-e666-4490-b46d-388a0047e412" ChangeDateTime="02/21/2017 01:11:22">
+    <Property Name="ElementName" Value="[dbo].[CRMUser].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CRMUser]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="29884ea1-16fe-4e72-b74b-486f0e1246e8" ChangeDateTime="02/21/2017 01:42:23">
+    <Property Name="ElementName" Value="[dbo].[CRMUser].[UserName ]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CRMUser]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UserName" />
+  </Operation>
 </Operations>

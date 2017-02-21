@@ -11,6 +11,9 @@
     [UpdatedBy]        NVARCHAR (50)    NULL,
     [UpdatedDate]      DATETIME         NULL,
     [RowVersionNumber] UNIQUEIDENTIFIER NOT NULL,
-    CONSTRAINT [PK_CommitteeRole_ID] PRIMARY KEY CLUSTERED ([ID] ASC)
+    CONSTRAINT [PK_CommitteeRole_ID] PRIMARY KEY CLUSTERED ([ID] ASC),
+    CONSTRAINT [FK_CommitteeRole_Committee_ID] FOREIGN KEY ([CommitteeID]) REFERENCES [dbo].[Committee] ([ID])
 );
+
+
 
