@@ -1,6 +1,7 @@
-﻿CREATE TABLE [dbo].[LookupValue] (
+﻿CREATE TABLE [dbo].[LookupValueDetail]
+(
     [ID]               INT              IDENTITY (1, 1) NOT NULL,
-    [LookupTypeID]     INT              NOT NULL,
+    [LookupValueID]    INT              NOT NULL,
     [ValueCode]        NVARCHAR (20)    NOT NULL,
     [ValueDescription] NVARCHAR (100)   NOT NULL,
     [Status]           NVARCHAR (20)    NOT NULL,
@@ -14,17 +15,6 @@
     [UpdatedBy]        NVARCHAR (50)    NULL,
     [UpdatedDate]      DATETIME         NULL,
     [RowVersionNumber] UNIQUEIDENTIFIER DEFAULT (newid()) NOT NULL,
-    CONSTRAINT [PK_LookupValue_ID] PRIMARY KEY CLUSTERED ([ID] ASC),
-    CONSTRAINT [FK_LookupValue_LookupType_ID] FOREIGN KEY ([LookupTypeID]) REFERENCES [dbo].[LookupType] ([ID])
+    CONSTRAINT [PK_LookupValueDetail_ID] PRIMARY KEY CLUSTERED ([ID] ASC),
+    CONSTRAINT [FK_LookupValueDetail_LookupValue_ID] FOREIGN KEY ([LookupValueID]) REFERENCES [dbo].[LookupValue] ([ID])
 );
-
-
-
-
-
-
-
-
-GO
-
-

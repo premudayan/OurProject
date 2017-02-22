@@ -2,6 +2,7 @@
 INSERT INTO LookupType (TypeCode, TypeDescription,Status ) VALUES ( 'ADDRESSTYPE', 'Address Type', 'ACTIVE' );
 INSERT INTO LookupType (TypeCode, TypeDescription,Status ) VALUES ( 'PHONETYPE', 'Phone Type', 'ACTIVE' );
 INSERT INTO LookupType (TypeCode, TypeDescription,Status ) VALUES ( 'EMAILTYPE', 'Email Type', 'ACTIVE' );
+INSERT INTO LookupType (TypeCode, TypeDescription,Status ) VALUES ( 'RELATIONSHIPTYPE', 'Relationship Type', 'ACTIVE' );
 	
 
 insert into lookupvalue ( LookupTypeid, valuecode, valuedescription, status ) values ((select id from LookupType where typecode ='ADDRESSTYPE') , 'H', 'Home', 'ACTIVE' );
@@ -18,5 +19,11 @@ insert into lookupvalue ( LookupTypeid, valuecode, valuedescription, status ) va
 
 insert into lookupvalue ( LookupTypeid, valuecode, valuedescription, status ) values ((select id from LookupType where typecode ='EMAILTYPE'), 'H', 'Home', 'ACTIVE' );
 insert into lookupvalue ( LookupTypeid, valuecode, valuedescription, status ) values ((select id from LookupType where typecode ='EMAILTYPE'), 'W', 'Work', 'ACTIVE' );
+
+insert into lookupvalue ( LookupTypeid, valuecode, valuedescription, status ) values ((select id from LookupType where typecode ='RELATIONSHIPTYPE'), 'EMP', 'Employee', 'ACTIVE' );
+insert into lookupvalue ( LookupTypeid, valuecode, valuedescription, status ) values ((select id from LookupType where typecode ='RELATIONSHIPTYPE'), 'EMPR', 'Employer', 'ACTIVE' );
+insert into lookupvalue ( LookupTypeid, valuecode, valuedescription, status ) values ((select id from LookupType where typecode ='RELATIONSHIPTYPE'), 'RPT', 'Reporting', 'ACTIVE' );
+insert into lookupvalue ( LookupTypeid, valuecode, valuedescription, status ) values ((select id from LookupType where typecode ='RELATIONSHIPTYPE'), 'MGR', 'Manager', 'ACTIVE' );
+
 
 **/

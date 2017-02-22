@@ -84,6 +84,7 @@
     <Build Include="dbo\Tables\CRM\Customer.sql" />
     <Build Include="dbo\Tables\CRM\CustomerPortal.sql" />
     <Build Include="dbo\Tables\Security\CRMRole.sql" />
+    <Build Include="dbo\Tables\Setup\LookupValueDetail.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="CRMDb.refactorlog" />
