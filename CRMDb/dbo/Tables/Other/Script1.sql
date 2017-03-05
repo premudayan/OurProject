@@ -1,4 +1,22 @@
 ﻿/**
+
+create database iCRM
+ON
+PRIMARY (NAME = iCRMDB,
+	FILENAME = 'F:\Data\iCRMDB.mdf' ),
+	FILEGROUP  iCRMDBFS CONTAINS FILESTREAM (
+	NAME = iCRMDBFS , 
+	FILENAME = 'F:\Data\iCRMDBFS' )
+LOG ON (
+	NAME = iCRMDBLOG , 
+	FILENAME = 'F:\Data\iCRMDBLOG.ldf' )
+GO
+
+
+EXEC sp_configure filestream_access_level, 2
+RECONFIGURE
+
+
 INSERT INTO LookupType (TypeCode, TypeDescription,Status ) VALUES ( 'ADDRESSTYPE', 'Address Type', 'ACTIVE' );
 INSERT INTO LookupType (TypeCode, TypeDescription,Status ) VALUES ( 'PHONETYPE', 'Phone Type', 'ACTIVE' );
 INSERT INTO LookupType (TypeCode, TypeDescription,Status ) VALUES ( 'EMAILTYPE', 'Email Type', 'ACTIVE' );
