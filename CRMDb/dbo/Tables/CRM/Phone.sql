@@ -12,7 +12,7 @@
     [CreatedDate]      DATETIME         NOT NULL,
     [UpdatedBy]        VARCHAR (50)    NULL,
     [UpdatedDate]      DATETIME         NULL,
-    [RowVersionNumber] UNIQUEIDENTIFIER NOT NULL,
+    [RowVersionNumber] INT NOT NULL DEFAULT 0,
     CONSTRAINT [PK_Phone_ID] PRIMARY KEY CLUSTERED ([ID] ASC),
     CONSTRAINT [FK_Phone_Customer_ID] FOREIGN KEY ([CustomerID]) REFERENCES [dbo].[Customer] ([ID])
 );

@@ -10,7 +10,7 @@
     [CreatedDate]      DATETIME         NOT NULL,
     [UpdatedBy]        VARCHAR (50)    NULL,
     [UpdatedDate]      DATETIME         NULL,
-    [RowVersionNumber] INT NOT NULL,
+    [RowVersionNumber] INT NOT NULL DEFAULT 0,
     CONSTRAINT [PK_CommitteeRole_ID] PRIMARY KEY CLUSTERED ([ID] ASC),
     CONSTRAINT [FK_CommitteeRole_Committee_ID] FOREIGN KEY ([CommitteeID]) REFERENCES [dbo].[Committee] ([ID])
 );

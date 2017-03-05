@@ -7,7 +7,7 @@
     [CreatedDate]      DATETIME         NOT NULL,
     [UpdatedBy]        VARCHAR (50)    NULL,
     [UpdatedDate]      DATETIME         NULL,
-    [RowVersionNumber] UNIQUEIDENTIFIER NOT NULL,
+    [RowVersionNumber] INT NOT NULL DEFAULT 0,
     CONSTRAINT [PK_CRMRole_ID] PRIMARY KEY CLUSTERED ([ID] ASC)
 );
 

@@ -14,7 +14,7 @@
     [CreatedDate]      DATETIME         DEFAULT (getdate()) NOT NULL,
     [UpdatedBy]        VARCHAR (50)    NULL,
     [UpdatedDate]      DATETIME         NULL,
-    [RowVersionNumber] UNIQUEIDENTIFIER DEFAULT (newid()) NOT NULL,
+    [RowVersionNumber] INT DEFAULT 0 NOT NULL,
     CONSTRAINT [PK_LookupValueDetail_ID] PRIMARY KEY CLUSTERED ([ID] ASC),
     CONSTRAINT [FK_LookupValueDetail_LookupValue_ID] FOREIGN KEY ([LookupValueID]) REFERENCES [dbo].[LookupValue] ([ID])
 );

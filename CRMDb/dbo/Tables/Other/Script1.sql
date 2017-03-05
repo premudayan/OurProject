@@ -1,8 +1,8 @@
 ﻿/**
 
 Enable the file stream in sql server configuration util by right clicking the srever name
-
 Then,
+
  EXEC sp_configure filestream_access_level, 2
  RECONFIGURE
 
@@ -18,6 +18,14 @@ LOG ON (
 	FILENAME = 'F:\Data\iCRMDBLOG.ldf' )
 GO
 
+ALTER DATABASE iCRM 
+    SET FILESTREAM ( NON_TRANSACTED_ACCESS = FULL, DIRECTORY_NAME = N'ExternalFiles' );
+
+CREATE TABLE CustomerPhotos AS FILETABLE 
+WITH
+(FILETABLE_DIRECTORY = 'Photos',
+FILETABLE_COLLATE_FILENAME = database_default
+);
 
 
 

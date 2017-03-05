@@ -11,7 +11,7 @@
     [CreatedDate]      DATETIME         NOT NULL,
     [UpdatedBy]        VARCHAR (50)    NULL,
     [UpdatedDate]      DATETIME         NULL,
-    [RowVersionNumber] UNIQUEIDENTIFIER NOT NULL,
+    [RowVersionNumber] INT NOT NULL DEFAULT 0,
     CONSTRAINT [PK_CRMRolePrivilege_ID] PRIMARY KEY CLUSTERED ([ID] ASC),
     CONSTRAINT [FK_CRMRolePrivilege_CRMRole_ID] FOREIGN KEY ([RoleID]) REFERENCES [dbo].[CRMRole] ([ID]),
     CONSTRAINT [FK_CRMRolePrivilege_CRMScreen_ID] FOREIGN KEY ([ScreenID]) REFERENCES [dbo].[CRMScreen] ([ID])
