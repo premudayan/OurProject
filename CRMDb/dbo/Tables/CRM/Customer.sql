@@ -8,6 +8,7 @@
     [SuffixName]       VARCHAR (50)    NULL,
 	[Title]            VARCHAR (50)    NULL,
     [FullName]         VARCHAR (100)   NOT NULL,
+	[PhotoId]          UNIQUEIDENTIFIER NULL,
     [SSN]              VARCHAR (9)     NULL,
     [SSN4]             VARCHAR (4)     NULL,
 	[DoNotCall]        BIT     NOT NULL DEFAULT 0,
