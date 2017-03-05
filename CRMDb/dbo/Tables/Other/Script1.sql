@@ -1,5 +1,11 @@
 ﻿/**
 
+Enable the file stream in sql server configuration util by right clicking the srever name
+
+Then,
+ EXEC sp_configure filestream_access_level, 2
+ RECONFIGURE
+
 create database iCRM
 ON
 PRIMARY (NAME = iCRMDB,
@@ -13,8 +19,6 @@ LOG ON (
 GO
 
 
-EXEC sp_configure filestream_access_level, 2
-RECONFIGURE
 
 
 INSERT INTO LookupType (TypeCode, TypeDescription,Status ) VALUES ( 'ADDRESSTYPE', 'Address Type', 'ACTIVE' );
