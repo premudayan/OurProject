@@ -97,7 +97,6 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\CRM\CustomerRelationship.sql" />
-    <Build Include="dbo\Tables\CRM\Document.sql" />
     <Build Include="dbo\Tables\CRM\Email.sql" />
     <Build Include="dbo\Tables\CRM\Phone.sql" />
     <Build Include="dbo\Tables\CRM\Prospect.sql" />
