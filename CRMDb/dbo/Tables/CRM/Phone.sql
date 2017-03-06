@@ -4,7 +4,7 @@
     [PhoneType]        VARCHAR (20)    NOT NULL,
     [PhoneNumber]      VARCHAR (20)    NOT NULL,
     [PhoneExtension]   VARCHAR (10)    NULL,
-	[Primary]          VARCHAR(1)      NOT NULL,
+    [Primary]          VARCHAR(1)      NOT NULL,
     [StartDate]        DATE             NOT NULL,
     [EndDate]          DATE             NULL,
     [Status]           VARCHAR (20)    NOT NULL,

@@ -2,7 +2,7 @@
 (
     [ID]               INT              NOT NULL,
     [CustomerID]       INT              NOT NULL,
-	[DocumentType]     VARCHAR (20)    NOT NULL,
+    [DocumentType]     VARCHAR (20)    NOT NULL,
     [DocumentID]       UNIQUEIDENTIFIER NOT NULL,
     [CreatedBy]        VARCHAR (50)    NOT NULL,
     [CreatedDate]      DATETIME         NOT NULL,
