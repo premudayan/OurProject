@@ -1,6 +1,7 @@
 ﻿CREATE TABLE [dbo].[Customer] (
     [ID]               INT             NOT NULL,
     [IDLONG]           UNIQUEIDENTIFIER NOT NULL,
+	[CustomerIdentifierID] VARCHAR (20) NOT NULL,
     [FirstName]        VARCHAR (50)    NOT NULL,
     [LastName]         VARCHAR (50)    NOT NULL,
     [MiddleName]       VARCHAR (50)    NULL,
